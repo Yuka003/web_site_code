@@ -1,0 +1,13 @@
+{%extends 'base.html'%}
+
+
+{%block content%}
+<h1>Welcome to CT BLOG Home page</h1>
+
+{%for blog in blogs %}
+<p><a href="/blog-detail/{{blog.id}}/">{{blog.title}}</a></p>
+<hr>
+
+{%endfor%}
+
+{%endblock%}
